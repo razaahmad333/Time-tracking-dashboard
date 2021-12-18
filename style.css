@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@media screen and (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+  }
+  body {
+    background-color: #0f1424;
+  }
+  .container {
+    width: 75vw;
+    margin: 120px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 4fr;
+        grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    height: auto;
+  }
+  .controllerAndProfile {
+    background-color: #1c1f4a;
+    border-radius: 13px;
+    color: #ccd0fa;
+  }
+  .profile {
+    background-color: #5847eb;
+    border-radius: 13px;
+    padding: 20px;
+  }
+  .profile .reportFor {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 0.9em;
+    opacity: 0.9;
+  }
+  .profile .dp img {
+    border: 2px solid #ccd0fa;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .profile .name {
+    padding-bottom: 60px;
+  }
+  .controllers {
+    padding: 20px;
+  }
+  .controllers .gear {
+    background-color: transparent;
+    border: none;
+    color: #ccd0fa;
+    font-size: 0.9em;
+    opacity: 0.7;
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .controllers .gear:hover {
+    opacity: 1;
+  }
+  .controllers .active {
+    opacity: 1;
+  }
+  .scheduleCards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .card {
+    overflow: hidden;
+    border-radius: 13px;
+    opacity: 0.8;
+    position: relative;
+  }
+  .card .bg {
+    position: absolute;
+    top: -3px;
+    right: 10px;
+    z-index: -1;
+    opacity: 1;
+    width: 60px;
+  }
+  #work {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #ff8c66), to(#0f1424));
+    background: linear-gradient(to bottom, #ff8c66 30%, #0f1424);
+  }
+  #play {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #56c2e6), to(#0f1424));
+    background: linear-gradient(to bottom, #56c2e6 30%, #0f1424);
+  }
+  #study {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #ff5c7c), to(#0f1424));
+    background: linear-gradient(to bottom, #ff5c7c 30%, #0f1424);
+  }
+  #exercise {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #4acf81), to(#0f1424));
+    background: linear-gradient(to bottom, #4acf81 30%, #0f1424);
+  }
+  #social {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #7536d3), to(#0f1424));
+    background: linear-gradient(to bottom, #7536d3 30%, #0f1424);
+  }
+  #selfCare {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #f1c65b), to(#0f1424));
+    background: linear-gradient(to bottom, #f1c65b 30%, #0f1424);
+  }
+  .cardContent {
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 25px;
+    border-radius: 13px;
+    background-color: #1c1f4a;
+  }
+  .cardContent:hover {
+    opacity: 0.93;
+  }
+  .cardContent .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cardContent .header .menu {
+    cursor: pointer;
+  }
+  .duration {
+    color: white;
+    font-size: 2.5em;
+    padding: 20px 0;
+  }
+  .previous {
+    color: #ccd0fa;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 99vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+  }
+  body {
+    background-color: #0f1424;
+  }
+  .container {
+    width: 90vw;
+    margin: 80px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+    height: auto;
+  }
+  .controllerAndProfile {
+    background-color: #1c1f4a;
+    border-radius: 13px;
+    color: #ccd0fa;
+  }
+  .profile {
+    background-color: #5847eb;
+    border-radius: 13px;
+    padding: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+  }
+  .profile .reportFor {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.9em;
+    opacity: 0.9;
+  }
+  .profile .dp img {
+    border: 2px solid #ccd0fa;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .profile .name {
+    padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .profile .name h1 {
+    font-size: 1.2em;
+    display: inline-block;
+  }
+  .controllers {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .controllers .gear {
+    background-color: transparent;
+    border: none;
+    color: #ccd0fa;
+    font-size: 0.9em;
+    opacity: 0.7;
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .controllers .gear:hover {
+    opacity: 1;
+  }
+  .controllers .active {
+    opacity: 1;
+  }
+  .scheduleCards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .card {
+    overflow: hidden;
+    border-radius: 13px;
+    opacity: 0.8;
+    position: relative;
+    border: 2px solid #0f1424;
+  }
+  .card .bg {
+    position: absolute;
+    top: -3px;
+    right: 10px;
+    z-index: -1;
+    opacity: 1;
+    width: 60px;
+  }
+  #work {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #ff8c66), to(#0f1424));
+    background: linear-gradient(to bottom, #ff8c66 30%, #0f1424);
+  }
+  #play {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #56c2e6), to(#0f1424));
+    background: linear-gradient(to bottom, #56c2e6 30%, #0f1424);
+  }
+  #study {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #ff5c7c), to(#0f1424));
+    background: linear-gradient(to bottom, #ff5c7c 30%, #0f1424);
+  }
+  #exercise {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #4acf81), to(#0f1424));
+    background: linear-gradient(to bottom, #4acf81 30%, #0f1424);
+  }
+  #social {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #7536d3), to(#0f1424));
+    background: linear-gradient(to bottom, #7536d3 30%, #0f1424);
+  }
+  #selfCare {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #f1c65b), to(#0f1424));
+    background: linear-gradient(to bottom, #f1c65b 30%, #0f1424);
+  }
+  .cardContent {
+    color: white;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 13px;
+    background-color: #1c1f4a;
+  }
+  .cardContent:hover {
+    opacity: 0.93;
+  }
+  .cardContent .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cardContent .header .menu {
+    cursor: pointer;
+  }
+  .body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .duration {
+    color: white;
+    font-size: 2.5em;
+    padding: 20px 0;
+  }
+  .previous {
+    padding-top: 40px;
+    color: #ccd0fa;
+    font-size: 0.8em;
+  }
+}
+
+.attribution {
+  font-size: 0.8em;
+  opacity: 0.7;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.attribution a {
+  color: #ccd0fa;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

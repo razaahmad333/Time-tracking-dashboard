@@ -1,0 +1,166 @@
+$blue: hsl(246, 80%, 60%);
+$lightRedWork: hsl(15, 100%, 70%);
+$softBluePlay: hsl(195, 74%, 62%);
+$lightRedStudy: hsl(348, 100%, 68%);
+$limeGreenExercise: hsl(145, 58%, 55%);
+$violetSocial: hsl(264, 64%, 52%);
+$softOrangeSelfCare: hsl(43, 84%, 65%);
+
+$veryDarkBlue: hsl(226, 43%, 10%);
+$darkBlue: hsl(235, 46%, 20%);
+$desaturatedBlue: hsl(235, 45%, 61%);
+$paleBlue: hsl(235, 82%, 89%);
+$borderRadius: 13px;
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: $veryDarkBlue;
+  // background-color: white;
+}
+
+.container {
+  width: 75vw;
+  margin: 120px auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
+  height: auto;
+}
+
+.controllerAndProfile {
+  background-color: $darkBlue;
+  border-radius: $borderRadius;
+  color: $paleBlue;
+}
+
+.profile {
+  background-color: $blue;
+  border-radius: $borderRadius;
+  padding: 20px;
+
+  .reportFor {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 0.9em;
+    opacity: 0.9;
+  }
+
+  .dp {
+    img {
+      border: 2px solid $paleBlue;
+      width: 50px;
+      border-radius: 50%;
+    }
+  }
+
+  .name {
+    padding-bottom: 60px;
+  }
+}
+
+.controllers {
+  padding: 20px;
+  .gear {
+    background-color: transparent;
+    border: none;
+    color: $paleBlue;
+    font-size: 0.9em;
+    opacity: 0.7;
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .active {
+    opacity: 1;
+  }
+}
+
+.scheduleCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: $borderRadius;
+  opacity: 0.8;
+  position: relative;
+  .bg {
+    position: absolute;
+    top: -3px;
+    right: 10px;
+    z-index: -1;
+    opacity: 1;
+    width: 60px;
+  }
+}
+
+#work {
+  background: linear-gradient(to bottom, $lightRedWork 30%, $veryDarkBlue);
+}
+
+#play {
+  background: linear-gradient(to bottom, $softBluePlay 30%, $veryDarkBlue);
+}
+
+#study {
+  background: linear-gradient(to bottom, $lightRedStudy 30%, $veryDarkBlue);
+}
+
+#exercise {
+  background: linear-gradient(to bottom, $limeGreenExercise 30%, $veryDarkBlue);
+}
+#social {
+  background: linear-gradient(to bottom, $violetSocial 30%, $veryDarkBlue);
+}
+#selfCare {
+  background: linear-gradient(
+    to bottom,
+    $softOrangeSelfCare 30%,
+    $veryDarkBlue
+  );
+}
+
+.cardContent {
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 25px;
+  border-radius: $borderRadius;
+  background-color: $darkBlue;
+  &:hover {
+    opacity: 0.93;
+  }
+}
+
+.cardContent .header {
+  display: flex;
+  justify-content: space-between;
+  .menu {
+    cursor: pointer;
+  }
+}
+
+.duration {
+  color: white;
+  font-size: 2.5em;
+  padding: 20px 0;
+}
+
+.previous {
+  color: $paleBlue;
+  font-size: 0.8em;
+}
