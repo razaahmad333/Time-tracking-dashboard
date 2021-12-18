@@ -104,7 +104,7 @@ body {
 .card {
   overflow: hidden;
   border-radius: $borderRadius;
-  opacity: 0.8;
+  z-index: 1;
   position: relative;
   .bg {
     position: absolute;
